@@ -13,7 +13,7 @@ connectDB();
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-  origin: "https://subtle-taiyaki-b26f04.netlify.app", 
+  origin: process.env.CLIENT_URL, 
   credentials: true
 }));
 

@@ -29,6 +29,11 @@ app.use("/api/users", userRoutes);
 //start the server
 const PORT = process.env.PORT;
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
+
+
 app.listen(PORT, () => {
     console.log("server is running at the port number 5004")
 })

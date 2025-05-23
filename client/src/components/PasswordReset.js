@@ -19,7 +19,7 @@ const PasswordReset = () => {
         setMessage(""); //clear the previous messages
 
         try {
-        const res = await fetch("https://password-reset-1-3n2j.onrender.com/api/users/password-reset", {
+        const res = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/users/password-reset', {
                 method: "POST",
                 headers: {
                     "Content-type" : "application/json"

@@ -1,0 +1,55 @@
+/* Page Not Found image : https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe88HagbqedZreTJZPi9rLdcnEL9DkhtiwqQ&s */
+.app-container {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsjOcxR6aeqIiYFXYgRhFk8OyzsS6_SPWv2Q&s")
+    no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  min-height: 100vh;
+
+  z-index: 1;
+  text-align: center;
+}
+
+/* Dark overlay  */
+.app-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+.card {
+  width: 96%;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.forgot-page-card {
+  width: 96%;
+  max-width: 450px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+h3 {
+  color: #007bff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+
+.card{
+  border-bottom: 2px solid #007bff;
+  border-left: 2px solid #007bff;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+input:focus {
+  outline:10px #007bff;
+}
